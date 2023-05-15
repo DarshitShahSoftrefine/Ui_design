@@ -4,15 +4,11 @@ import 'package:flutter/material.dart';
 import 'home_page.dart';
 
 void main() {
-  runApp(DevicePreview(
-    builder: (context) {
-      return MyApp();
-    },
-  ));
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  MyApp({super.key}) {}
 
   // This widget is the root of your application.
   @override
@@ -23,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
