@@ -14,7 +14,7 @@ class Nav extends StatefulWidget {
 }
 
 class _NavState extends State<Nav> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 0 ;
   final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
     const CouponsPage(),
@@ -53,14 +53,14 @@ class _NavState extends State<Nav> {
 
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.black,
+        selectedItemColor: Colors.blue,
         backgroundColor: Colors.white,
         unselectedItemColor: Colors.black,
         // unselectedItemColor: Colors.black,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home,
+              Icons.home_outlined,
             ),
             label:
               'Home',

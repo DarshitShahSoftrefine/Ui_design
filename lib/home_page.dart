@@ -20,12 +20,7 @@ class _HomePageState extends State<HomePage> {
   int count = 0;
   int _selectedIndex = 0;
 
-  static const List<Widget> _pages = <Widget>[
-    HomePage(),
-    CouponsPage(),
-    EventsPage(),
-    MapPage()
-  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -35,12 +30,10 @@ class _HomePageState extends State<HomePage> {
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         leading: const Icon(Icons.menu),
-        title: const Center(
-          child: Text(
-            "Notifications",
-            style: TextStyle(
-                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
-          ),
+        title: Text(
+          "                    Home",
+          style: TextStyle(
+              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
         ),
         toolbarHeight: 100,
         elevation: 0.0,
@@ -52,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             Row(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(
                   width: 5,
@@ -177,48 +170,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      floatingActionButton: Container(
-        margin: const EdgeInsets.all(10),
-        width: 70,
-        height: 70,
-        child: FloatingActionButton(
-          backgroundColor: Colors.red,
-          isExtended: true,
-          //Floating action button on Scaffold
-          onPressed: () {
-            //code to execute on button press
-          },
-          child: const Text("Action!"), //icon inside button
-        ),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      
-      //floating action button position to center
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
-        type: BottomNavigationBarType.shifting,
-        selectedItemColor: Colors.black,
-        selectedIconTheme: IconThemeData(color: Colors.black),
-        
-        iconSize: 30,
-        items: const [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined), label: 'Home'),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.card_giftcard_outlined,
-              ),
-              label: 'Coupons'),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.event_available_outlined,
-              ),
-              label: 'Events'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.location_on_outlined), label: 'Map'),
-        ],
-      ),
+
     );
   }
 
