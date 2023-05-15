@@ -21,8 +21,9 @@ class _EventsPageState extends State<EventsPage> {
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         leading: const Icon(Icons.menu),
-        title: Text(
-          "                    Events",
+        centerTitle: true,
+        title: const Text(
+          "Events",
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
         ),

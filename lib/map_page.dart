@@ -21,8 +21,9 @@ class _MapPageState extends State<MapPage> {
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         leading: const Icon(Icons.menu),
-        title: Text(
-          "                     Maps",
+        centerTitle: true,
+        title: const Text(
+          "Maps",
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
         ),

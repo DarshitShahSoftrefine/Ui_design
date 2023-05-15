@@ -30,13 +30,13 @@ class _HomePageState extends State<HomePage> {
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         leading: const Icon(Icons.menu),
-        title: Text(
-          "                    Home",
+        title: const Text(
+          "Home",
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
         ),
         toolbarHeight: 100,
-        elevation: 0.0,
+        elevation: 0.0,centerTitle: true,
       ),
       drawer: const Drawer(
         elevation: 2,
@@ -145,13 +145,13 @@ class _HomePageState extends State<HomePage> {
                             ),
                             subtitle: RichText(
                               text: TextSpan(
-                                style: TextStyle(color: Colors.black),
+                                style: const TextStyle(color: Colors.black),
                                 children: <TextSpan>[
                                   TextSpan(
-                                      text: samplePosts[index].email + " \n"),
+                                      text: "${samplePosts[index].email} \n"),
                                   TextSpan(
                                       text: samplePosts[index].body,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontWeight: FontWeight.bold))
                                 ],
                               ),

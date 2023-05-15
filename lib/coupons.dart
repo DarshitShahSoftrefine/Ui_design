@@ -18,11 +18,12 @@ class _CouponsPageState extends State<CouponsPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        centerTitle: true,
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         leading: const Icon(Icons.menu),
-        title: Text(
-          "                  Coupons",
+        title: const Text(
+          "Coupons",
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
         ),
